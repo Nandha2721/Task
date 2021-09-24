@@ -79,7 +79,7 @@ handleChange = info => {
                      <Col span={8}></Col>
                      <Col span={8}>
                      <h1 style={{marginLeft:'20%'}}>Add Your Personal Details</h1>
-                     <h4></h4>
+                     <h4>You can change it to a controlled component to access the activeKey on Tabs component.</h4>
 
 <br/>
 <br/>
@@ -130,7 +130,7 @@ handleChange = info => {
                      <Col span={8}></Col>
                      <Col span={8}>
                      <h1 style={{marginLeft:'20%'}}>Add Your Company Details</h1>
-                     <h4></h4>
+                     <h4>You can change it to a controlled component to access the activeKey on Tabs component.</h4>
 
 <br/>
 <br/>
