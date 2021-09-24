@@ -1,0 +1,14 @@
+.ant-upload.ant-upload-select-picture-card{
+  border: radious 50px !important;
+}
+.ant-tabs-top > .ant-tabs-nav{
+  margin: 0px !important;
+  background: #32718f !important;
+}
+.ant-tabs-tab {
+  color: white !important;
+}
+
+.ant-tabs-tab-active {
+  color: white !important;
+}
