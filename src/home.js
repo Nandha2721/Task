@@ -99,13 +99,13 @@ handleChange = info => {
       <Button>Male</Button> <Button>Female</Button> <Button>Others</Button>
       </Form.Item>
       <Form.Item label="Country" name="country" rules={[{ required: true }]}>
-      <Input placeholder="Enter Full Name" />
+      <Input placeholder="Enter Country" />
       </Form.Item>
        <Form.Item label="State" name="state" rules={[{ required: true }]}>
-      <Input placeholder="Enter Full Name" />
+      <Input placeholder="Enter State" />
       </Form.Item>
       <Form.Item label="Phone" name="phone" rules={[{ required: true }]}>
-      <Input placeholder="Enter Full Name" />
+      <Input placeholder="Enter Phone Number"/>
       </Form.Item>
     <Row>
 <Col span={24}>
@@ -155,7 +155,7 @@ handleChange = info => {
     </Form.Item>
         
       <Form.Item label="Company Name" name="companyname" rules={[{ required: true }]}>
-      <Input placeholder="Enter Full Name" />
+      <Input placeholder="Enter Company Name" />
       </Form.Item>
       <Form.Item label="Email ID" name="emailID" rules={[{ required: true }]}>
       <Input placeholder="Enter Email ID" />
@@ -164,7 +164,7 @@ handleChange = info => {
       <Input placeholder="Enter Job Title" />
       </Form.Item>
        <Form.Item label="Years of Experience" name="experience" rules={[{ required: true }]}>
-      <Input placeholder="Enter " />
+      <Input placeholder="Enter  Years of Experience" />
       </Form.Item>
      
      <Row>
