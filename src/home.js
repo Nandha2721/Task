@@ -70,10 +70,10 @@ handleChange = info => {
             <Row>
                 <Col span={24}>
 
-                <Tabs defaultActiveKey="1" centered onChange={()=>this.onChange()}>
+                <Tabs defaultActiveKey="1" centered activeKey={this.state.activeTab} onChange={this.changeTab} >
                   
                   
-            <TabPane style={{color:"white"}} tab="Personal Details" key="1" activeKey={this.state.activeTab} onChange={this.changeTab} >
+            <TabPane style={{color:"white"}} tab="Personal Details" key="1" >
              <div>
                  <Row style={{background:"#fbfbfb"}}>
                      <Col span={8}></Col>
@@ -109,7 +109,7 @@ handleChange = info => {
       </Form.Item>
     <Row>
 <Col span={24}>
-<Button style={{width:"100%",background:"orangered"}} type="primary">Next</Button>
+<Button style={{width:"100%",background:"orangered"}} onClick={() => this.changeTab("2")}type="primary">Next</Button>
 </Col>
 
     </Row>
@@ -169,9 +169,9 @@ handleChange = info => {
      
      <Row>
        <Col span={4}>
-       <Button type="primary">Back</Button>
+       <Button type="primary" onClick={() => this.changeTab("1")}>Back</Button>
        </Col><Col span={18}>
-        <Button style={{width:"100%",background:"orangered"}} type="primary">Next</Button>
+        <Button style={{width:"100%",background:"orangered"}} onClick={() => this.changeTab("3")} type="primary">Next</Button>
        </Col>
      </Row>
      
@@ -203,7 +203,7 @@ handleChange = info => {
       </Form.Item>
       <Row>
        <Col span={4}>
-       <Button type="primary">Back</Button>
+       <Button type="primary" onClick={() => this.changeTab("2")}>Back</Button>
        </Col><Col span={18}>
         <Button style={{width:"100%",background:"orangered"}} type="primary">Next</Button>
        </Col>
