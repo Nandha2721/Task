@@ -37,13 +37,20 @@ super(props);
         console.log('Received values of form: ', values);
          const data = values
 
-         if(data.username ===this.state.email && data.password ===this.state.password){
+         if(data.username ==="sarvanan234@gmail.com" && data.password ===this.state.password){
              console.log("same admin")
              this.setState({
                  usertype:"admin"
              })
-             this.props.history.push('/dashboard')
+             this.props.history.push('/projectcreate')
          }
+         else if(data.username ==="madhivanan@gmail.com" && data.password ===this.state.password){
+          console.log("same admin")
+          this.setState({
+              usertype:"admin"
+          })
+          this.props.history.push('/projectlist')
+      }
          else{
                  this.props.history.push('/welcome')
              this.setState({
@@ -107,22 +114,7 @@ super(props);
             </Col>
         </Row>
        
-          <br/>
-          <Row>
-              <Col span={8}></Col>
-              <Col span={6}>
-              <a className="login-form-forgot" href="">
-            Forgot password
-          </a>
-              </Col>
-          </Row>
-        <br/>
-         <Row>
-<Col span={4}></Col>
-              <Col span={18}>
-             <h4>If  You  Do Not Have a Account  ?<Link to="/signup">  Register now!</Link></h4>
-              </Col>
-          </Row>
+        
           
       </Form>
 

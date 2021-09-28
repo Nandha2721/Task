@@ -1,0 +1,28 @@
+{
+  "Projects": [
+    {
+      "Name": "React Application",
+      "Id": "1",
+      "Tasks": {
+        "assignedTo": "HEMAN",
+        "status": "Not Complete",
+        "task": "Sample",
+        "Id": "ID123"
+      },
+      "id": 1
+    }
+  ],
+  "User": [
+    {
+      "Name": "JHON",
+      "userType": "Admin",
+      "id": 1
+    },
+    {
+      "Id": "2",
+      "name": "NAndha",
+      "userType": "Manager",
+      "id": 2
+    }
+  ]
+}

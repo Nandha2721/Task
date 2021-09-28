@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {Row,Col} from 'antd'
 import 'antd/dist/antd.css';
 
 class Welcome extends Component {
@@ -40,6 +40,4 @@ super(props);
         );
     }
 }
-
-const WrappedNormalLoginForm = Form.create({ name: 'register' })(Welcome);
-export default WrappedNormalLoginForm
+export default Welcome

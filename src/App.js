@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Login from "./loginpage";
-import Welcome from "./welcome";
-import Signup from "./signup";
-import Dashboard from "./dashboard";
-// import EditPage from "./pages/edit";
-// import Register from "./pages/register";
-// import NotFound from "./pages/notfound";
-// import FileUploadPage from "./pages/fileupload";
+import UserCreation from "./components/usercreations";
+
+import ProjectCreation from "./components/projectcreation";
+import TaskCreation from "./components/taskcreation";
+import Login from "./components/login";
+import ProjectList from "./components/projectlist";
+import TaskList from "./components/tasklist";
+import Welcome from "./components/welcome";
 
 class App extends Component {
 
@@ -16,10 +16,13 @@ class App extends Component {
             <div className="App">
                 <Router>
                     <Switch>
-                        <Route exact path='/' component={Login} />
+                       <Route exact path='/login' component={Login} />
+                        <Route exact path='/usercreate' component={UserCreation} />
+                        <Route exact path='/projectcreate' component={ProjectCreation} />
+                        <Route exact path='/taskcreate/:id' component={TaskCreation} />
+                        <Route exact path='/projectlist' component={ProjectList} />
+                        <Route exact path='/tasklist/:id' component={TaskList} />
                         <Route exact path='/welcome' component={Welcome} />
-                        <Route exact path='/signup' component={Signup} />
-                        <Route exact path='/dashboard' component={Dashboard} />
                     </Switch>
                 </Router>
             </div>
